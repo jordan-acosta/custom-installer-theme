@@ -1,4 +1,17 @@
-<div>
-  <h1>Foo</h1>
-  {{ alert "info" "Your message here" }}
-</div>
+<!DOCTYPE html>
+ <html lang="en">
+ {{ head . }}
+ <body {{ bodyAttrs . }}>
+     {{ header . }}
+
+     <main class="customer-main">
+         <div class="max-w-5xl mx-auto px-6 lg:px-8 py-8">
+             <h1>Foo</h1>
+            {{ alert "info" "Your message here" }}
+         </div>
+     </main>
+
+     {{ footer . }}
+     {{ scripts . }}
+ </body>
+ </html>
